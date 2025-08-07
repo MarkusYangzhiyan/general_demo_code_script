@@ -1,0 +1,2 @@
+# general_demo_code_script
+一些应用场景的通用代码示例
