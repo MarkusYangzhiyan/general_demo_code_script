@@ -20,7 +20,6 @@ base
 
 os.makedirs： 创建目录，即使父目录不存在也能创建
 os.mkdir：    只能创建当前目录，如果父目录不存在则报错
-比如说  我们要创建base/log/
 
 """
 
@@ -34,4 +33,5 @@ output_dir = base_dir/'output'
 log_dir = base_dir/"logs"
 os.makedirs(log_dir,exist_ok=True)
 # =======================================================
+
 
