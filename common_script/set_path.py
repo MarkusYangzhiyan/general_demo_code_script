@@ -1,3 +1,29 @@
+"""
+在全局环境下设置路径
+Path(__file__) 取得当下py文件的路径： xx/xx/xx.py
+.parent 返回的是上一级路径： xx/xx
+假设路径目录：
+base
+  code
+    1.py
+    2.py
+  input
+    file1
+    file2
+  output
+    file1
+    file2
+  logs
+    file1.log
+    file2.log
+    
+
+os.makedirs： 创建目录，即使父目录不存在也能创建
+os.mkdir：    只能创建当前目录，如果父目录不存在则报错
+比如说  我们要创建base/log/
+
+"""
+
 import os
 from pathlib import Path
 
@@ -8,3 +34,4 @@ output_dir = base_dir/'output'
 log_dir = base_dir/"logs"
 os.makedirs(log_dir,exist_ok=True)
 # =======================================================
+
